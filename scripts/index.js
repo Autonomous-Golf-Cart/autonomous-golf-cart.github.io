@@ -34,6 +34,16 @@ function headerScrollDelay() {
   }
 }
 
+window.onload = function screenSize() {
+  const root = document.querySelector(":root");
+  let aspectRatio = window.innerHeight / window.innerWidth;
+  if (aspectRatio > 1.25) {
+    root.setAttribute("display", "mobile");
+  } else {
+    root.setAttribute("display", "desktop");
+  }
+};
+
 document.querySelector("#menu-option").addEventListener("click", menuHide);
 document.querySelector("#menu").addEventListener("click", menuClick);
 window.addEventListener("scroll", scrollMenuCheck);
