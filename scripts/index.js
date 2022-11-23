@@ -34,7 +34,7 @@ function headerScrollDelay() {
   }
 }
 
-window.onload = function screenSize() {
+function screenSize() {
   const root = document.querySelector(":root");
   let aspectRatio = window.innerHeight / window.innerWidth;
   if (aspectRatio > 1.25) {
@@ -42,9 +42,11 @@ window.onload = function screenSize() {
   } else {
     root.setAttribute("display", "desktop");
   }
-};
+}
 
+window.onload = screenSize();
 document.querySelector("#menu-option").addEventListener("click", menuHide);
 document.querySelector("#menu").addEventListener("click", menuClick);
 window.addEventListener("scroll", scrollMenuCheck);
 window.addEventListener("scroll", headerScrollDelay);
+window.addEventListener("resize", screenSize);
