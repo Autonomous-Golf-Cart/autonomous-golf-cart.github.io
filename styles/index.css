@@ -205,21 +205,6 @@ div.project .column2 img {
   padding: 0;
 }
 
-footer {
-  display: table;
-  width: 100%;
-  background-color: bisque;
-  height: 25vh;
-}
-
-footer h2 {
-  font-size: calc(0.65 * var(--rwu));
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  padding: var(--rwu);
-}
-
 div.people {
   background-color: var(--primary);
 }
@@ -273,4 +258,19 @@ div.people .button {
   font-weight: bold;
   width: calc(10 * var(--rwu));
   margin: var(--rwu) calc(((100vw - 10 * var(--rwu))) / 2);
+}
+
+footer {
+  display: table;
+  width: 100%;
+  background-color: bisque;
+  height: 25vh;
+}
+
+footer h2 {
+  font-size: calc(0.65 * var(--rwu));
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding: var(--rwu);
 }
